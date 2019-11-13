@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Tajawal&display=swap');
+@font-face {
+    font-family: YouthPower;
+    src: url('font/YouthPower.ttf');
+}
+@font-face {
+    font-family: Lato;
+    src: url('font/Lato-Regular.ttf');
+}
+
+label {
+    font-family: YouthPower;
+}
+
+.logo {
+    font-size: 50px;
+    font-family: YouthPower;
+
+    color: #ededed;
+    transition: color 0.5s;
+
+    text-transform: uppercase;
+}
+
+.logo:hover {
+    color: #92082d;
+}
+
+nav ul {
+    list-style: none;
+    overflow-y: hidden;
+    vertical-align: middle;
+    margin: none;
+    min-height: 70px;
+
+    background: rgba(237,237,237,0);
+background: -moz-linear-gradient(left, rgba(237,237,237,0) 33%, rgba(237,237,237,0.03) 34%, rgba(237,237,237,1) 66%);
+background: -webkit-gradient(left top, right top, color-stop(33%, rgba(237,237,237,0)), color-stop(34%, rgba(237,237,237,0.03)), color-stop(66%, rgba(237,237,237,1)));
+background: -webkit-linear-gradient(left, rgba(237,237,237,0) 33%, rgba(237,237,237,0.03) 34%, rgba(237,237,237,1) 66%);
+background: -o-linear-gradient(left, rgba(237,237,237,0) 33%, rgba(237,237,237,0.03) 34%, rgba(237,237,237,1) 66%);
+background: -ms-linear-gradient(left, rgba(237,237,237,0) 33%, rgba(237,237,237,0.03) 34%, rgba(237,237,237,1) 66%);
+background: linear-gradient(to right, rgba(237,237,237,0) 33%, rgba(237,237,237,0.03) 34%, rgba(237,237,237,1) 66%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ededed', GradientType=1 );
+}
+
+nav ul li {
+    display: inline;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+.degrade {
+    float: right;
+    padding: 3% 5%;
+}
+
+@media only screen and (max-width: 611px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    nav ul {
+        text-align: center;
+        margin-top: 0;
+        background: #92082d;
+        border-radius: 0;
+    }
+
+    .degrade {
+        float: left;
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 612px) {
+    .degrade {
+        float: none;
+        padding: 0;
+    }
+    nav ul {
+        padding-left: 0;
+    }
+ }
+
+ 
+@media only screen and (max-width: 768px) {
+    .degrade {
+        float: right;
+        padding: 4% 5%;
+    }
+    nav ul {
+        padding-left: 0;
+    }
+ }

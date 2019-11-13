@@ -1,0 +1,35 @@
+.artigo-botao {
+    color: #ededed;
+    padding: 0.8rem;
+    font-size: 1em;
+    min-width: 25%;
+    
+    border-radius: 100px;
+    font-weight: bold;
+    cursor: pointer;
+    background: #191919;
+    border:none;
+  }
+  
+  button.azul {
+    background: #55acff;
+  }
+  
+  button.azul:hover {
+    background: #51acff;
+  }
+  
+  button.verde {
+    background: #55ffa2;
+  }
+  
+  button.laranja {
+    background: #ff7d55;
+  }
+
+  @media only screen and (max-width: 600px) { 
+    .artigo-botao {
+        width: 100%;
+    }
+  }
+  
