@@ -7,9 +7,19 @@
     <title>Galeria</title>
     <link rel="stylesheet" href="conteudo/estilo/menu.css">
     <link rel="stylesheet" href="conteudo/estilo/principal.css">
-    <link rel="stylesheet" href="conteudo/estilo/artigo.css">
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <script src="conteudo/codigos/main.js"></script>
+    <script>    
+        
+        
+
+        function DepoisDeCarregar(){
+            var Dados = JSON.parse(PegarDados());            
+            var myImage = new Image(500, 500);
+            myImage.src = Dados.images[1].url;
+            document.body.appendChild(myImage);
+        }
+        </script>
 </head>
 <body>
     <nav>
@@ -31,16 +41,11 @@
 
         <div id="galeria">
             <p><a href="javascript:void alert('1')"><img src="conteudo/img/Logo/Korn.png" alt="">Korn</a></p>
-            <p><a href="#"><img src="conteudo/img/Logo/Slipknot(preto).png" alt="">Slipknot</a></p>
-            <p><a href="#"><img src="conteudo/img/Logo/Soad.png" alt="">System of a Down</a></p>
+            <p><a href="slipknot/"><img class="foto" src="conteudo/img/Logo/Slipknot(preto).png" alt="">Slipknot</a></p>
+            <p><a href="soad/"><img src="conteudo/img/Logo/Soad.png" alt="">System of a Down</a></p>
 
-            <p><a href="javascript:void alert('1')"><img src="conteudo/img/Logo/Korn.png" alt="">Korn</a></p>
-            <p><a href="#"><img src="conteudo/img/Logo/Slipknot(preto).png" alt="">Slipknot</a></p>
-            <p><a href="#"><img src="conteudo/img/Logo/Soad.png" alt="">System of a Down</a></p>
-
-            <p><a href="javascript:void alert('1')"><img src="conteudo/img/Logo/Korn.png" alt="">Korn</a></p>
-            <p><a href="#"><img src="conteudo/img/Logo/Slipknot(preto).png" alt="">Slipknot</a></p>
-            <p><a href="#"><img src="conteudo/img/Logo/Soad.png" alt="">System of a Down</a></p>
+            
+            <p><a href="korn/"><img id="fotodokorn" onload="DepoisDeCarregar()" src="conteudo/img/Logo/Korn.png" alt="">Korn</a></p>
 
 
         </div>
