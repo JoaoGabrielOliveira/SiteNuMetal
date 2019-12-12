@@ -1,0 +1,103 @@
+html {
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.Titulo {
+    font-size: 55px;
+    font-weight: 500;
+    margin: 4% 0% 0% 0%;
+}
+
+.subInformações {
+    font-size: 25px;     
+    font-weight: 300;
+    text-transform: uppercase;
+
+    margin-left: 5%;
+}
+
+.Estrelas {
+    margin: 8% 0%;
+}
+
+.Descrição {
+    font-size: 20px;
+    font-weight: 200;
+    text-align: justify;
+    word-spacing: 0px;
+    margin-bottom: 6%;
+    overflow: hidden;
+}
+
+.Estrelas i{
+    color:yellow;
+    cursor: pointer;
+}
+
+.Estrelas i:hover{
+    color: cyan;
+}
+
+ul.ListaComImagens {
+    list-style: none;
+
+    display: flex;
+    box-flex: wrap;
+    margin: 0%;
+    
+    padding: 0;
+
+    text-align: center;
+
+    overflow-x: scroll;
+}
+
+.ListaComImagens li {
+    margin: 0 2%;
+    transition: filter 100ms;
+}
+
+.ListaComImagens li a {
+    font-size: 90%;
+    text-decoration: none;
+    color: rgb(237, 237, 237);
+    font-weight: 400;
+}
+
+.ListaComImagens li a:hover {
+    text-decoration: underline;
+}
+
+.Estrelas .ListaComImagens img {
+    width: 25px;
+}
+
+.ListaComImagens li:hover {
+    filter: drop-shadow(0 0 5px rgb(245, 229, 2));
+}
+
+.ListaComImagens img {
+    width: 100px;
+    border-radius: 10px;
+}
+
+
+#Informacoes {
+    padding: 50px;
+    padding-left: 70px;
+    font-family: "Oswald";
+    
+
+    width: 45%;
+    height: 100%;
+
+
+    color: rgb(237, 237, 237);
+    text-align: left;
+    line-height: 1.2;
+}
+
+#Conteudo {
+    height: 100%;
+}

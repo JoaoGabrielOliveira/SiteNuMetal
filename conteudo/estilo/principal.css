@@ -3,21 +3,24 @@
     font-family: 'Roboto';
     margin: 0;
     padding: 0;
+    
 }
 
-html {
-    
+body, html {
+    height: 100%;
 }
 
 body {
-    
     background-image: url('../img/wall.jpg');
+}
+
+body#corpo {
+    background-size: cover;
 }
 
 a {
     text-decoration: none;
     color: black;
-
     font-weight: 300;
 }
 
@@ -28,16 +31,19 @@ a:hover {
 /* width */
 ::-webkit-scrollbar {
     width: 5px;
+    height: 5px;
+    border-radius: 10px ;
   }
-  
+
   /* Track */
   ::-webkit-scrollbar-track {
-    background: #92082d;
+    background: #92082d5e;
   }
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
     background: #888;
+    border-radius: 10px;
   }
   
   /* Handle on hover */

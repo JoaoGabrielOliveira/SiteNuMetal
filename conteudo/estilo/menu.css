@@ -8,6 +8,10 @@
     src: url('font/Lato-Regular.ttf');
 }
 
+nav ul  {
+    transition:all 1s;
+}
+
 label {
     font-family: YouthPower;
 }
@@ -26,12 +30,17 @@ label {
     color: #92082d;
 }
 
+nav {
+    filter: drop-shadow(0 0 10px black);
+}
+
 nav ul {
     list-style: none;
     overflow-y: hidden;
     vertical-align: middle;
-    margin: none;
+    margin: 0;
     min-height: 70px;
+    max-height: 90px;
 
     background: rgba(237,237,237,0);
 background: -moz-linear-gradient(left, rgba(237,237,237,0) 33%, rgba(237,237,237,0.03) 34%, rgba(237,237,237,1) 66%);
@@ -47,12 +56,23 @@ nav ul li {
     display: inline;
     text-align: center;
     padding: 14px 16px;
+    margin: 0 20px;
+    
+    
+}
+
+nav ul li:hover {
+    border-bottom: 1px solid black;
 }
 
 .degrade {
     float: right;
     padding: 3% 5%;
 }
+
+#Informacoes {
+	transition: all 1ms;
+	}
 
 @media only screen and (max-width: 611px) {
     body {
@@ -91,4 +111,24 @@ nav ul li {
     nav ul {
         padding-left: 0;
     }
+
+	#Informacoes {
+	width: 90%;
+}
+
+     .Titulo  {
+	font-size:300%;
+    }
  }
+
+
+@media only screen and (max-width: 425px) {
+
+	#Informacoes {
+	border:10px solid white;
+	text-align:center;
+	width: 100%;
+	padding-left: 10px;
+	}
+
+}
