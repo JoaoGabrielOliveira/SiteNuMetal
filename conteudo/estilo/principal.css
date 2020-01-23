@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+/* @import url('https://fonts.googleapis.com/css?family=Tajawal&display=swap'); */
+@font-face {
+    font-family: YouthPower;
+    src: url('font/YouthPower.ttf');
+}
 *{
     box-sizing: border-box;
     font-family: 'Roboto';
